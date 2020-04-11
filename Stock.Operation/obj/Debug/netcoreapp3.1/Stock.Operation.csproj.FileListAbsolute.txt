@@ -1,0 +1,12 @@
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\bin\Debug\netcoreapp3.1\Stock.Operation.deps.json
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\bin\Debug\netcoreapp3.1\Stock.Operation.dll
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\bin\Debug\netcoreapp3.1\Stock.Operation.pdb
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\bin\Debug\netcoreapp3.1\Stock.Model.dll
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\bin\Debug\netcoreapp3.1\Stock.Model.pdb
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\obj\Debug\netcoreapp3.1\Stock.Operation.csprojAssemblyReference.cache
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\obj\Debug\netcoreapp3.1\Stock.Operation.csproj.CoreCompileInputs.cache
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\obj\Debug\netcoreapp3.1\Stock.Operation.AssemblyInfoInputs.cache
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\obj\Debug\netcoreapp3.1\Stock.Operation.AssemblyInfo.cs
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\obj\Debug\netcoreapp3.1\Stock.Operation.csproj.CopyComplete
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\obj\Debug\netcoreapp3.1\Stock.Operation.dll
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Operation\obj\Debug\netcoreapp3.1\Stock.Operation.pdb

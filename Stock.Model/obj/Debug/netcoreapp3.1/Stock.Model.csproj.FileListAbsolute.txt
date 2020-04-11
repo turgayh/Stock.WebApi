@@ -1,0 +1,9 @@
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\bin\Debug\netcoreapp3.1\Stock.Model.deps.json
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\bin\Debug\netcoreapp3.1\Stock.Model.dll
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\obj\Debug\netcoreapp3.1\Stock.Model.csprojAssemblyReference.cache
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\obj\Debug\netcoreapp3.1\Stock.Model.AssemblyInfoInputs.cache
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\obj\Debug\netcoreapp3.1\Stock.Model.AssemblyInfo.cs
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\bin\Debug\netcoreapp3.1\Stock.Model.pdb
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\obj\Debug\netcoreapp3.1\Stock.Model.csproj.CoreCompileInputs.cache
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\obj\Debug\netcoreapp3.1\Stock.Model.dll
+C:\Users\turga\OneDrive\Masaüstü\hakan\asp.net core\Stock.WebApi\Stock.Model\obj\Debug\netcoreapp3.1\Stock.Model.pdb
