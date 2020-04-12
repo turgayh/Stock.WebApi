@@ -5,6 +5,7 @@
 - ASP.Net Core 3.1
 - Docker
 - Docker-Compose
+- Swagger 5.0
 
 ### Build Application and Run
 ```shell
