@@ -7,9 +7,12 @@
 - Docker-Compose
 
 ### Build Application and Run
-
-> cd Stock.Api
-
-> docker-compose build
-
-> docker-compose up
+```shell
+cd Stock.Api
+```
+```shell
+docker-compose build
+```
+```shell
+docker-compose up
+```
