@@ -21,7 +21,7 @@ namespace Stock.Operation.BasketServices
             {
                 
                 Basket customerBasket = basket.Find<Basket>(d => d.CustomerId== customerId).FirstOrDefault();
-                if (customerBasket == null) 
+                if (customerBasket == null)   // initialize 
                 {
                     Basket temp = new Basket();
                     temp.CustomerName = customerId;
@@ -33,7 +33,7 @@ namespace Stock.Operation.BasketServices
                 data.TotalUnit -= 1;
                 customerBasket.Items.Add(data);
                 customerBasket.TotalPrice += data.Price;
-                basket.ReplaceOne(d => d.CustomerName == customerId,customerBasket);
+                basket.ReplaceOne(d => d.CustomerId == customerId,customerBasket);
             }
 
             return data;
