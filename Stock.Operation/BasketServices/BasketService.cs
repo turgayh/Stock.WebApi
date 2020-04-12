@@ -9,23 +9,29 @@ namespace Stock.Operation.BasketServices
 {
     public class BasketService : IBasketService
     {
-        private readonly IMongoCollection<OrderItem> basket;
+        private readonly IMongoCollection<Basket> basket;
 
         public BasketService(IStockDatabaseSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            basket = database.GetCollection<OrderItem>(settings.StockCollectionName);
+            basket = database.GetCollection<Basket>(settings.BasketCollectionName);
         }
 
-        public Task<OrderItem> AddBasket(OrderItem data)
+        public Product AddBasket(Product data, string consumerId,int quantity)
         {
-                throw new NotImplementedException();
+            for (int i = 0; i < quantity; i++)
+            {
+                Basket consumerBasket = basket.Find<Basket>(d => d.ConsumerId == consumerId).FirstOrDefault();
+                consumerBasket.Items.Add(data);
+                consumerBasket.TotalPrice += data.Price;
+            }
+            return data;
         }
 
-        public Task<List<OrderItem>> CheckBasket()
+        public Basket ListBasket(string consumerId)
         {
-            throw new NotImplementedException();
+            return basket.Find<Basket>(d => d.ConsumerId == consumerId).FirstOrDefault();
         }
     }
 }
