@@ -9,4 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Stock.Model\Stock.Model.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomerServices\" />
+  </ItemGroup>
 </Project>
