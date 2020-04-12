@@ -15,33 +15,38 @@ namespace Stock.Operation.BasketServices
             basket = database.GetCollection<Basket>(settings.BasketCollectionName);
         }
 
-        public Product AddBasket(Product data, string customerId,int quantity)
+        public Product AddBasket(Product data, string customerName,int quantity)
         {
             for (int i = 0; i < quantity; i++)
             {
-                
-                Basket customerBasket = basket.Find<Basket>(d => d.CustomerId== customerId).FirstOrDefault();
+                int flag = 0;
+                Basket customerBasket = basket.Find<Basket>(d => d.CustomerName == customerName).FirstOrDefault();
                 if (customerBasket == null)   // initialize 
                 {
-                    Basket temp = new Basket();
-                    temp.CustomerName = customerId;
-                    temp.TotalPrice = 0;
-                    temp.Items = new List<Product>();
-                    basket.InsertOne(temp);
-                    customerBasket = basket.Find<Basket>(d => d.CustomerId == customerId).FirstOrDefault();
+                    customerBasket = new Basket();
+                    customerBasket.CustomerName = customerName;
+                    customerBasket.TotalPrice = 0;
+                    customerBasket.Items = new List<Product>();
+                    basket.InsertOne(customerBasket);
+                    flag = 1;
                 }
+
+                if (flag == 1)
+                    customerBasket = basket.Find<Basket>(d => d.CustomerName == customerName).FirstOrDefault();
+
                 data.TotalUnit -= 1;
                 customerBasket.Items.Add(data);
                 customerBasket.TotalPrice += data.Price;
-                basket.ReplaceOne(d => d.CustomerId == customerId,customerBasket);
+                basket.ReplaceOne(d => d.CustomerName == customerName, customerBasket);
+
             }
 
             return data;
         }
 
-        public Basket ListBasket(string consumerId)
+        public Basket ListBasket(string customerName)
         {
-            return basket.Find<Basket>(d => d.CustomerId == consumerId).FirstOrDefault();
+            return basket.Find<Basket>(d => d.CustomerName == customerName).FirstOrDefault();
         }
     }
 }

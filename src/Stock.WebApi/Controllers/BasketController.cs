@@ -1,5 +1,4 @@
 using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Stock.Operation;
 using Stock.Operation.BasketServices;
@@ -13,26 +12,26 @@ namespace Stock.WebApi.Controllers
     {
         private readonly IBasketService basketService;
         private readonly IProductService productService;
-        public BasketController(IBasketService basketService,IProductService productService)
+        public BasketController(IBasketService basketService, IProductService productService)
         {
             this.basketService = basketService;
             this.productService = productService;
         }
 
         [HttpPost("AddItem")]
-        public IActionResult AddItem(Product data,string consumerId,int quantity)
+        public IActionResult AddItem(Product data, string customerName, int quantity)
         {
             if (data == null)
                 return NotFound();
 
-            Product item =  productService.Get(data.ProductId);
-            if(item.TotalUnit != 0)
+            Product item = productService.Get(data.ProductId);
+            if (item.TotalUnit >= quantity)
             {
                 try
                 {
-                    basketService.AddBasket(data,consumerId,quantity);
+                    basketService.AddBasket(data, customerName, quantity);
                 }
-                catch(Exception err)
+                catch (Exception err)
                 {
                     return BadRequest(err.Message);
                 }
@@ -44,11 +43,12 @@ namespace Stock.WebApi.Controllers
         }
 
         [HttpGet("ListBasket")]
-        public IActionResult ListBasket(string consumerId) {
-            if (consumerId == "")
+        public IActionResult ListBasket(string customerName)
+        {
+            if (customerName == "")
                 return NotFound();
 
-            Basket data = basketService.ListBasket(consumerId);
+            Basket data = basketService.ListBasket(customerName);
             return Ok(data);
         }
     }

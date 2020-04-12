@@ -1,47 +1,44 @@
 ﻿<Properties StartupConfiguration="{7F06DEBB-55C2-448D-8368-08D8402D8C9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Stock.WebApi/Controllers/CustomerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Stock.WebApi/Controllers/ProductController.cs">
     <Files>
-      <File FileName="Stock.Operation/BasketServices/BasketService.cs" Line="12" Column="1" />
-      <File FileName="Stock.Operation/ProductServices/ProductService.cs" Line="23" Column="1" />
-      <File FileName="Stock.Model/Product.cs" Line="7" Column="17" />
-      <File FileName="Stock.WebApi/Controllers/BasketController.cs" Line="45" Column="1" />
-      <File FileName="Stock.WebApi/Controllers/ProductController.cs" Line="83" Column="2" />
-      <File FileName="Stock.Operation/BasketServices/IBasketService.cs" Line="12" Column="22" />
-      <File FileName="Stock.Model/Basket.cs" Line="15" Column="1" />
-      <File FileName="Stock.Model/StockDatabaseSettings.cs" Line="5" Column="41" />
-      <File FileName="Stock.WebApi/appsettings.json" Line="5" Column="25" />
-      <File FileName="Stock.WebApi/Startup.cs" Line="48" Column="10" />
-      <File FileName="Stock.Model/Customer.cs" Line="12" Column="48" />
-      <File FileName="Stock.Operation/CustomerServices/ManagementCustomerService.cs" Line="14" Column="10" />
-      <File FileName="Stock.Operation/CustomerServices/IManagementCustomerService.cs" Line="13" Column="1" />
-      <File FileName="Stock.WebApi/Controllers/CustomerController.cs" Line="12" Column="1" />
+      <File FileName="docker-compose.yml" Line="15" Column="1" />
+      <File FileName="src/Stock.WebApi/appsettings.json" Line="14" Column="47" />
+      <File FileName="src/Stock.WebApi/Controllers/BasketController.cs" Line="56" Column="2" />
+      <File FileName="src/Stock.Operation/ProductServices/ProductService.cs" Line="27" Column="20" />
+      <File FileName="src/Stock.Operation/BasketServices/BasketService.cs" Line="43" Column="1" />
+      <File FileName="src/Stock.Operation/BasketServices/IBasketService.cs" Line="8" Column="2" />
+      <File FileName="src/Stock.Operation/Stock.Operation.csproj" Line="1" Column="1" />
+      <File FileName="src/Stock.WebApi/Controllers/CustomerController.cs" Line="1" Column="1" />
+      <File FileName="src/Stock.WebApi/Controllers/ProductController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Stock.WebApi" expanded="True">
-            <Node name="Stock.Model" expanded="True" />
-            <Node name="Stock.Operation" expanded="True">
-              <Node name="CustomerServices" expanded="True" />
-              <Node name="ProductServices" expanded="True" />
-            </Node>
-            <Node name="Stock.WebApi" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="CustomerController.cs" selected="True" />
+            <Node name="src" expanded="True">
+              <Node name="Stock.Operation" expanded="True">
+                <Node name="BasketServices" expanded="True" />
+                <Node name="ProductServices" expanded="True" />
+              </Node>
+              <Node name="Stock.WebApi" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="ProductController.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
+            <Node name="docker-compose" expanded="True" />
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.src.Stock.WebApi PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/hakan/Desktop/asp.net-core/Stock.WebApi/src/Stock.WebApi/Controllers/BasketController.cs" relfile="src/Stock.WebApi/Controllers/BasketController.cs" line="29" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Stock.WebApi PreferredExecutionTarget="/Applications/Safari.app" />
