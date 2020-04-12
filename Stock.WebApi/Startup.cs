@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using Stock.Model;
 using Stock.Operation;
 using Stock.Operation.BasketServices;
+using Stock.Operation.CustomerServices;
 using Stock.Operation.ProductServices;
 
 namespace Stock.WebApi
@@ -38,6 +39,7 @@ namespace Stock.WebApi
                 sp.GetRequiredService<IOptions<StockDatabaseSettings>>().Value);
             services.AddSingleton<IProductService,ProductService>();
             services.AddSingleton<IBasketService, BasketService>();
+            services.AddSingleton<IManagementCustomerService, ManagementCustomerService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });

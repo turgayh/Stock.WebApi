@@ -19,13 +19,8 @@ namespace Stock.WebApi.Controllers
         {
             this.productService = productService;
         }
-        [HttpGet("check")]
-        public string Check()
-        {
-            return "Product";
-        }
-
-        [HttpGet]
+      
+        [HttpGet("ListProduct")]
         public ActionResult<List<Product>> Get() =>
             productService.Get();
 
@@ -42,7 +37,7 @@ namespace Stock.WebApi.Controllers
             return val;
         }
 
-        [HttpPost]
+        [HttpPost("CreateProduct")]
         public ActionResult<Product> Create(Product val)
         {
             productService.Create(val);
