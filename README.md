@@ -9,10 +9,6 @@
 ### Build Application and Run
 ```shell
 cd Stock.Api
-```
-```shell
 docker-compose build
-```
-```shell
 docker-compose up
 ```
