@@ -2,7 +2,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 namespace Stock.Model
 {
-    public class Product
+    public class Product 
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
@@ -12,6 +12,6 @@ namespace Stock.Model
         public decimal Price { get; set; }
 
         public string Brand { get; set; }
-
+        public int TotalUnit { get; set; }
     }
 }

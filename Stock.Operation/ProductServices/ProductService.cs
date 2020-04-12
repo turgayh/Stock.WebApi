@@ -19,7 +19,7 @@ namespace Stock.Operation
         }
 
         public List<Product> Get() =>
-    product.Find(val => true).ToList();
+            product.Find(val => true).ToList();
 
         public Product Get(string id) =>
             product.Find<Product>(val => val.ProductId == id).FirstOrDefault();
