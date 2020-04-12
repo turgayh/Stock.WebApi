@@ -6,3 +6,10 @@
 - Docker
 - Docker-Compose
 
+### Build Application and Run
+
+> cd Stock.Api
+
+> docker-compose build
+
+> docker-compose up
