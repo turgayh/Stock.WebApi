@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{7F06DEBB-55C2-448D-8368-08D8402D8C9C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Stock.Operation/BasketServices/BasketService.cs">
+    <Files>
+      <File FileName="Stock.Operation/BasketServices/BasketService.cs" Line="26" Column="51" />
+      <File FileName="Stock.Operation/ProductServices/ProductService.cs" Line="20" Column="1" />
+      <File FileName="Stock.Model/OrderProduct.cs" Line="11" Column="2" />
+      <File FileName="Stock.Model/Product.cs" Line="11" Column="41" />
+      <File FileName="Stock.WebApi/Controllers/BasketController.cs" Line="20" Column="1" />
+      <File FileName="Stock.WebApi/Controllers/ProductController.cs" Line="25" Column="30" />
+      <File FileName="Stock.Operation/BasketServices/IBasketService.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Stock.WebApi" expanded="True">
+            <Node name="Stock.Model" expanded="True" />
+            <Node name="Stock.Operation" expanded="True">
+              <Node name="BasketServices" expanded="True">
+                <Node name="BasketService.cs" selected="True" />
+              </Node>
+              <Node name="ProductServices" expanded="True" />
+            </Node>
+            <Node name="Stock.WebApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Stock.WebApi PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

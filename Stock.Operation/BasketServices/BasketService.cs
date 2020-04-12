@@ -15,12 +15,12 @@ namespace Stock.Operation.BasketServices
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            product = database.GetCollection<Product>(settings.StockCollectionName);
+            basket = database.GetCollection<OrderItem>(settings.StockCollectionName);
         }
 
         public Task<OrderItem> AddBasket(OrderItem data)
         {
-            throw new NotImplementedException();
+                throw new NotImplementedException();
         }
 
         public Task<List<OrderItem>> CheckBasket()
