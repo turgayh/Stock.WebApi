@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace Stock.Model
+namespace Stock.Operation
 {
     public class Basket:Customer
     {

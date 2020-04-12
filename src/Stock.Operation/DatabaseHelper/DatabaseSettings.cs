@@ -1,6 +1,6 @@
-﻿namespace Stock.Model
+﻿namespace Stock.Operation.DatabaseHelper
 {
-    public class StockDatabaseSettings : IStockDatabaseSettings
+    public class DatabaseSettings : IDatabaseSettings
     {
         public string ProductCollectionName { get; set; }
         public string CustomerCollectionName { get; set; }
@@ -9,7 +9,7 @@
         public string DatabaseName { get; set; }
     }
 
-    public interface IStockDatabaseSettings
+    public interface IDatabaseSettings
     {
         string ProductCollectionName { get; set; }
         string CustomerCollectionName { get; set; }

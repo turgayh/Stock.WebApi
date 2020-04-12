@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Stock.Model;
+using Stock.Operation;
 using Stock.Operation.BasketServices;
 using Stock.Operation.ProductServices;
 

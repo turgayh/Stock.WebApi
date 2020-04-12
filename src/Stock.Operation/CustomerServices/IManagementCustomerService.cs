@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Stock.Model;
+using Stock.Operation;
 
 namespace Stock.Operation.CustomerServices
 {

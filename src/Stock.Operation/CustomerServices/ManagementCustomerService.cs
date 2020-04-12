@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MongoDB.Driver;
-using Stock.Model;
+using Stock.Operation.DatabaseHelper;
 
 namespace Stock.Operation.CustomerServices
 {
@@ -10,12 +9,11 @@ namespace Stock.Operation.CustomerServices
 
         private readonly IMongoCollection<Customer> customer;
 
-        public ManagementCustomerService(IStockDatabaseSettings settings)
+        public ManagementCustomerService(IDatabaseSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
             customer = database.GetCollection<Customer>(settings.CustomerCollectionName);
-
         }
 
         public Customer AddCustomer(Customer data)

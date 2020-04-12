@@ -1,9 +1,7 @@
 ﻿using MongoDB.Driver;
-using Stock.Model;
+using Stock.Operation.DatabaseHelper;
 using Stock.Operation.ProductServices;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Stock.Operation
 {
@@ -11,7 +9,7 @@ namespace Stock.Operation
     {
         private readonly IMongoCollection<Product> product;
 
-        public ProductService(IStockDatabaseSettings settings)
+        public ProductService(IDatabaseSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);

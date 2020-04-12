@@ -1,4 +1,4 @@
-﻿using Stock.Model;
+﻿using Stock.Operation;
 using System;
 using System.Collections.Generic;
 using System.Text;

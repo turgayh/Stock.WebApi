@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Stock.Model;
 using Stock.Operation;
 using Stock.Operation.ProductServices;
 
@@ -60,19 +56,6 @@ namespace Stock.WebApi.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id:length(24)}")]
-        public IActionResult Delete(string id)
-        {
-            var val = productService.Get(id);
 
-            if (val == null)
-            {
-                return NotFound();
-            }
-
-            productService.Remove(val.ProductId);
-
-            return NoContent();
-        }
     }
 }

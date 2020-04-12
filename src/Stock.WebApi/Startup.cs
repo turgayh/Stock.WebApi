@@ -1,20 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using Stock.Model;
 using Stock.Operation;
 using Stock.Operation.BasketServices;
 using Stock.Operation.CustomerServices;
+using Stock.Operation.DatabaseHelper;
 using Stock.Operation.ProductServices;
 
 namespace Stock.WebApi
@@ -32,11 +28,11 @@ namespace Stock.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.Configure<StockDatabaseSettings>(
-                Configuration.GetSection(nameof(StockDatabaseSettings)));
+            services.Configure<DatabaseSettings>(
+                Configuration.GetSection(nameof(DatabaseSettings)));
 
-            services.AddSingleton<IStockDatabaseSettings>(sp =>
-                sp.GetRequiredService<IOptions<StockDatabaseSettings>>().Value);
+            services.AddSingleton<IDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
             services.AddSingleton<IProductService,ProductService>();
             services.AddSingleton<IBasketService, BasketService>();
             services.AddSingleton<IManagementCustomerService, ManagementCustomerService>();
