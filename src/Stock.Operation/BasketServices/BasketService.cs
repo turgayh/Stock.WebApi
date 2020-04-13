@@ -40,10 +40,12 @@ namespace Stock.Operation.BasketServices
                 customerBasket.Items.Add(data);
                 customerBasket.TotalPrice += data.Price;
                 customerBasket.ProductQuantity[productId] += 1;
+                if (customerBasket.ProductQuantity[productId] > productTotalUnit)
+                    break;
+
                 basket.ReplaceOne(d => d.CustomerName == customerName, customerBasket);
 
-                if (customerBasket.ProductQuantity[productId] > productTotalUnit)
-                    break;    
+ 
             }
 
             return customerBasket.CustomerId;
