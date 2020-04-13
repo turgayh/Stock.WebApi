@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-
+﻿using System.Collections.Generic;
 namespace Stock.Operation
 {
-    public class Basket:Customer
+    public class Basket : Customer
     {
         public List<Product> Items { get; set; }
 
+        public Dictionary<string, int> ProductQuantity {get;set;}
         public decimal TotalPrice { get; set; }
     }
 }

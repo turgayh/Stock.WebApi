@@ -19,17 +19,18 @@ namespace Stock.WebApi.Controllers
         }
 
         [HttpPost("AddItem")]
-        public IActionResult AddItem(Product data, string customerName, int quantity)
+        public IActionResult AddItem(string productId, string customerName, int quantity)
         {
-            if (data == null)
+            if (productId == null)
                 return NotFound();
 
-            Product item = productService.Get(data.ProductId);
+            Product item = productService.Get(productId);
+            
             if (item.TotalUnit >= quantity)
             {
                 try
                 {
-                    basketService.AddBasket(data, customerName, quantity);
+                    basketService.AddBasket(item, customerName, quantity);
                 }
                 catch (Exception err)
                 {
@@ -39,7 +40,7 @@ namespace Stock.WebApi.Controllers
             else
                 return NotFound("There is no item in stock");
 
-            return Ok(data);
+            return Ok(productId);
         }
 
         [HttpGet("ListBasket")]

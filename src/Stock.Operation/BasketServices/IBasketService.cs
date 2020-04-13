@@ -8,7 +8,7 @@ namespace Stock.Operation.BasketServices
 {
     public interface IBasketService
     {
-        public Product AddBasket(Product data, string consumerId, int quantity);
+        public string AddBasket(Product data, string consumerId, int quantity);
         public Basket ListBasket(string consumerId);
         
     }
